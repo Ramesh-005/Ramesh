@@ -1,0 +1,75 @@
+                                                  
+spliting digits balues:
+
+n=int(input("enter the value"))
+while(n>0):
+    temp=n%10
+    n=n//10
+    print(temp,end="   ")
+ 
+
+reverce the string:
+
+string=input("e t v")
+rev=string
+for i in string:
+    rev=i+rev
+    print(rev)
+                                                     
+print pattern in Python:
+
+n=int(input("enter the value"))
+for i in range(n):
+    for j in range(n-i):
+      print("*",end=" ")
+    print(" ")
+
+pattern in A:
+n = int(input("num:"))
+for i in range(n):
+    for j in range(n):
+        if(i == n//2 or i == 0):
+            print("*",end =" ")
+        elif(j == 0 or j == n-1):
+            print("*",end=" " )
+        else:
+            print(" ",end=" ")
+    print()
+
+parrern in I:
+n=int(input("enter a number"))
+for i in range(n):
+    for j in range(n):
+        if(i==0 or i==n-1):
+            print("*",end=" ")
+        elif(n//2==j):
+            print("*",end=" ")
+        else:
+            print("",end="  ")
+    print()
+
+
+pattern in 8:
+n=int(input("enter a number"))
+for i in range(n):
+    for j in range(n-2):
+        if j==0 or j==n-3 or i==0 or i==n-1 or i==n//2:
+            print("*",end=" ")
+        
+            
+        else:
+            print("",end="  ")
+    print()
+                                                    
+
+
+duplication in string
+
+string=input(" etv:")
+duplication_char=[ ]
+count =string.count(string[0])
+for i in string:
+    if string.count(i)>=2:
+         duplication_char.append(i)
+print(duplication_char)
+
